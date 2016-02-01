@@ -6,7 +6,7 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>SF events</title>
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -30,6 +30,14 @@
     <script src="popup.js"></script>
   </head>
   <body>
+    <h1>Search for popular events in SF!</h1>
+    <form id="eventbrite-search-form">
+      <label for="city">City:</label>
+      <input type="text" name="city" placeholder = "SF">
+      <label for="state">State:</label>
+      <input type="text" name="state" placeholder = 'CA'>
+    </form>
+
     <div id="status"></div>
     <img id="image-result" hidden>
   </body>
