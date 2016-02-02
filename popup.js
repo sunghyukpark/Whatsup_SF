@@ -84,32 +84,6 @@ var stringifyUtcDate = function(utc){
 }
 
 
-// Cache handlers
-
-var storeLocation = function() {
-  chrome.storage.sync.set({
-    city: cityInput.val(),
-    state: stateInput.val()
-  });
-};
-
-var getStoredLocation = function(callback) {
-  chrome.storage.sync.get(['city', 'state'], callback);
-};
-
-var storeEventListHTML = function(html) {
-  chrome.storage.sync.set({ eventListHTML: html });
-};
-
-var getStoredEventListHTML = function(callback) {
-  chrome.storage.sync.get('eventListHTML', callback);
-};
-
-var clearStoredEventListHTML = function() {
-  chrome.storage.sync.remove('eventListHTML');
-};
-
-
 $(document).ready(function(){
   var searchForm = $('#search-event');
   searchForm.submit(function(event){
