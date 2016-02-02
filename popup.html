@@ -1,22 +1,25 @@
 <!DOCTYPE html>
   <head>
     <title>Whatsup SF</title>
-    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
     <div id="error-msg"></div>
     <h1>What's up SF!</h1>
-    <label for="city">City:</label>
-    <input id="city" type="text" placeholder="San Francisco">
+    <form id="search-event">
+      <label for="city">City:</label>
+      <input id="city" type="text" placeholder="San Francisco">
 
-    <label for="state">State:</label>
-    <input id="state" type="text" placeholder="CA">
+      <label for="state">State:</label>
+      <input id="state" type="text" placeholder="CA">
 
-    <button id="search">Show Events</button>
+      <input type="submit">
+    </form>
+
 
 
     <div id='event-wrapper'>
-      <h1>This Week's Popular Events</h1>
+      <h2>This Week's Popular Events</h2>
       <div id="this-week-events-list"></div>
 
       <div id="loading-msg"></div>

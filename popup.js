@@ -157,6 +157,9 @@ var clearStoredEventListHTML = function() {
 
 
 $(document).ready(function(){
-  var searchButton = $('#search');
-  searchButton.on("click", makeEventsRequest);
+  var searchForm = $('#search-event');
+  searchForm.submit(function(event){
+    event.preventDefault();
+    makeEventsRequest();
+  });
 });
